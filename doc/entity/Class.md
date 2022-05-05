@@ -95,41 +95,16 @@ entity:
   - category: Class
     longname: test_nested_class.Out
     name: Out
-    r:
-        d: 
-        e:
-        s:.
-        u:
   - category: Class
     longname: test_nested_class.Out.Inner1
     name: Inner1
-    r:
-        d: 
-        e:
-        s:.
-        u:
   - category: Function
     longname: test_nested_class.out_func
     name: out_func
-    r:
-        d: 
-        e:
-        s:.
-        u:
   - category: Class
     longname: test_nested_class.out_func.Inner2
     name: Inner2
-    r:
-        d: 
-        e:
-        s:.
-        u:
   - category: Class
     longname: test_nested_class.out_func.Inner2.Inner3
     name: Inner3
-    r:
-        d: 
-        e:
-        s:.
-        u:
 ```

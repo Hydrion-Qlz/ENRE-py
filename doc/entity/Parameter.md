@@ -46,99 +46,39 @@ entity:
   items:
   - category: Function
     longname: test_parameter.func1
-    name: func1
-    r:
-        d: 
-        e:
-        s:.
-        u:
+    name: func1 
   - category: Parameter
     longname: test_parameter.func1.x
     name: x
-    r:
-        d: 
-        e:
-        s:x
-        u:
   - category: Function
     longname: test_parameter.func2
-    name: func2
-    r:
-        d: 
-        e:
-        s:.
-        u:
+    name: func2 
   - category: Parameter
     longname: test_parameter.func2.x
-    name: x
-    r:
-        d: 
-        e:
-        s:x
-        u:
+    name: x 
   - category: Function
     longname: test_parameter.func3
-    name: func3
-    r:
-        d: 
-        e:
-        s:.
-        u:
+    name: func3 
   - category: Parameter
     longname: test_parameter.func3.x
-    name: x
-    r:
-        d: 
-        e:
-        s:x
-        u:
+    name: x 
   - category: Parameter
     longname: test_parameter.func3.y
-    name: y
-    r:
-        d: 
-        e:
-        s:x
-        u:
+    name: y 
   - category: Parameter
     longname: test_parameter.func3.z
-    name: z
-    r:
-        d: 
-        e:
-        s:x
-        u:
+    name: z 
   - category: Function
     longname: test_parameter.func4
-    name: func4
-    r:
-        d: 
-        e:
-        s:.
-        u:
+    name: func4 
   - category: Parameter
     longname: test_parameter.func4.x
-    name: x
-    r:
-        d: 
-        e:
-        s:x
-        u:
+    name: x 
   - category: AnonymousFunction
     longname: test_parameter.func4.(32)
-    name: null
-    r:
-        d: 
-        e:
-        s:x
-        u:
+    name: null 
   - category: Lambda Parameter
     longname: test_parameter.func4.(32).t
     name: t
-    r:
-        d: 
-        e:
-        s:x
-        u:
 
 ```
