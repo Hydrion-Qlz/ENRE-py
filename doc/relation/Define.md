@@ -37,27 +37,60 @@ relation:
   - category: Define
     dest: test_module_level_define.Base
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
+
   - category: Define
     dest: test_module_level_define.Inherit
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_module_level_define.func1
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_module_level_define.x
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_module_level_define.y
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_module_level_define.t1
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_module_level_define.t2
     src: test_module_level_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_module_level_define.t3
     src: test_module_level_define
+    r:
+      e: x
+      d: x
+      u: .
 
 ```
 
@@ -96,39 +129,59 @@ relation:
   - category: Define
     dest: test_nested_define.func
     src: test_nested_define
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func.inner
     src: test_nested_define.func
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func.inner_inner
     src: test_nested_define.func
-  - category: Call
-    dest: test_nested_define.func
-    src: test_nested_define.func.inner_inner
-  - category: Call
-    dest: test_nested_define.func
-    src: test_nested_define.func.inner
-  - category: Call
-    dest: test_nested_define.func.inner_inner
-    src: test_nested_define.func.inner
-  - category: Call
-    dest: test_nested_define.func.inner
-    src: test_nested_define.func
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func2.x
     src: test_nested_define.func2
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func2.y
     src: test_nested_define.func2
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func2.t1
     src: test_nested_define.func2
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func2.t2
     src: test_nested_define.func2
+    r:
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_nested_define.func2.t3
     src: test_nested_define.func2
+    r:
+      e: x
+      d: x
+      u: .
 
 ```
 

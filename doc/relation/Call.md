@@ -25,12 +25,27 @@ relation:
   - category: Define
     dest: test_global_function_call.func1
     src: test_global_function_call
+    r:
+      s:o/Concept
+      e: .
+      d: x
+      u: .
   - category: Call
     dest: test_global_function_call.func1
     src: test_global_function_call.func1
+    r:
+      s:.
+      e: .
+      d: .
+      u: .
   - category: Call
     dest: test_global_function_call.func1
     src: test_global_function_call
+    r:
+      s: .
+      e: .
+      d: .
+      u: .
 ```
 - Class Method Call
 ```python
@@ -53,27 +68,70 @@ instance.method()
 
 ```
 ```yaml
+name: ClassMethodCall
 relation:
   exact: false
   items:
   - category: Define
     dest: test_method_call.ClassA
     src: test_method_call
+    r: 
+      s:o/Concept
+      e: .
+      u: .
+      depends: x
   - category: Define
     dest: test_method_call.ClassA.method
     src: test_method_call.ClassA
+    r: 
+      s:o/Concept
+      e: .
+      u: .
+      depends: x
   - category: Define
     dest: test_method_call.ClassB
     src: test_method_call
+    r: 
+      s:o/Concept
+      e: .
+      u: .
+      depends: x
   - category: Define
     dest: test_method_call.ClassB.method
     src: test_method_call.ClassB
+    r: 
+      s:o/Concept
+      e: .
+      u: .
+      depends: x
+
   - category: Define
     dest: test_method_call.instance
     src: test_method_call
+    r: 
+      s: .
+      e: .
+      u: .
+      depends: x
+
   - category: Call
     dest: test_method_call.ClassA.method
     src: test_method_call
+    r: 
+      s: .
+      e: .
+      u: .
+      depends: .
+  - category: Call
+    dest: test_method_call.ClassB.method
+    negative: True
+    src: test_method_call
+    r: 
+      s: .
+      e: .
+      u: x
+      depends: .
+
 
 ```
 
@@ -100,39 +158,59 @@ relation:
   - category: Define
     dest: test_local_call.func
     src: test_local_call
+    r: 
+      s: o/Concept
+      e: .
+      d: x
+      u: .
   - category: Define
     dest: test_local_call.func.inner
     src: test_local_call.func
+    r: 
+      s: o/Concept
+      e: .
+      d: x
+      u: .
   - category: Define
-    dest: test_local_call.func.inner_inner
-    src: test_local_call.func
+    dest: test_local_call.func.inner.inner_inner
+    src: test_local_call.func.inner
+    r: 
+      s:o/Concept
+      e: .
+      d: x
+      u: .
   - category: Call
     dest: test_local_call.func
-    src: test_local_call.func.inner_inner
+    src: test_local_call.func.inner.inner_inner
+    r:
+      s: .
+      e: .
+      d: .
+      u: .
   - category: Call
     dest: test_local_call.func
     src: test_local_call.func.inner
+    r:
+      s:.
+      e: .
+      d: .
+      u: .
   - category: Call
-    dest: test_local_call.func.inner_inner
+    dest: test_local_call.func.inner.inner_inner
     src: test_local_call.func.inner
+    r:
+      s: .
+      e: .
+      d: .
+      u: .
   - category: Call
     dest: test_local_call.func.inner
     src: test_local_call.func
-  - category: Define
-    dest: test_local_call.func2.x
-    src: test_local_call.func2
-  - category: Define
-    dest: test_local_call.func2.y
-    src: test_local_call.func2
-  - category: Define
-    dest: test_local_call.func2.t1
-    src: test_local_call.func2
-  - category: Define
-    dest: test_local_call.func2.t2
-    src: test_local_call.func2
-  - category: Define
-    dest: test_local_call.func2.t3
-    src: test_local_call.func2
+    r:
+      s: .
+      e: .
+      d: .
+      u: .
 ```
 
 - First Order Function Call
@@ -150,5 +228,10 @@ relation:
     items:
     - dest: test_first_order_func_call.f
       src: test_first_order_func_call.acceptor
+      r:
+        s: x
+        e: .
+        u: .
+        d: x
 
 ```

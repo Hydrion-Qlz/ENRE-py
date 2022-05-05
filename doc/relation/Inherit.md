@@ -8,7 +8,7 @@ name: Inherit
 
 - Class Inherit
 ```python
-
+// test_inherit.py
 class Base:
     ...
 class Inherit(Base):
@@ -25,9 +25,8 @@ def func():
 
     class LocalInherit2(Base, Base2):
         ...
-
-
 ```
+
 ```yaml
 name: ClassInherit
 relation:
@@ -36,21 +35,45 @@ relation:
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.Inherit
+    r:
+      e: .
+      u: .
+      d: .
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.Inherit1
+    r:
+      e: .
+      u: .
+      d: .
   - category: Inherit
     dest: test_inherit.Base2
     src: test_inherit.Inherit1
+    r:
+      e: .
+      u: .
+      d: .
   - category: Inherit
     dest: test_inherit.Base
-    src: test_inherit.func.Inherit
+    src: test_inherit.func.LocalInherit
+    r:
+      e: .
+      u: .
+      d: .
   - category: Inherit
     dest: test_inherit.Base
-    src: test_inherit.func.Inherit2
+    src: test_inherit.func.LocalInherit2
+    r:
+      e: .
+      u: .
+      d: .
   - category: Inherit
     dest: test_inherit.Base2
-    src: test_inherit.func.Inherit2
+    src: test_inherit.func.LocalInherit2
+    r:
+      e: .
+      u: .
+      d: .
 
 ```
 - VariableInherit
@@ -62,15 +85,24 @@ def mixin(c, d):
 ```
 
 ```yaml
-name: TBA
+name: VariableInherit
 relation:
   exact: false
   items:
   - category: Inherit
     dest: test_variable_inherit.Mixed.c
     src: test_variable_inherit.mixin.Mixed
+    r:
+      e: .
+      u: x
+      d: x
+
   - category: Inherit
     dest: test_variable_inherit.Mixed.d
     src: test_variable_inherit.mixin.Mixed
+    r:
+      e: .
+      u: x
+      d: x
 
 ```

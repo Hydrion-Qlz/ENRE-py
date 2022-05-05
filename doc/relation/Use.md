@@ -49,66 +49,150 @@ relation:
   - category: Define
     dest: test_module_level_define.Base
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.Inherit
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Inherit
     dest: test_module_level_define.Base
     src: test_module_level_define.Inherit
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.func1
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.x
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.y
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.t1
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.t2
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.t3
     src: test_module_level_define
+    r: 
+      u: .
+      e: x
+      d: x
   - category: Define
     dest: test_module_level_define.a
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Define
     dest: test_module_level_define.b
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Use
     dest: test_module_level_define.a
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Use
     dest: test_module_level_define.b
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Use
     dest: test_module_level_define.Base
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: .
   - category: Use
     dest: test_module_level_define.Inherit
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: .
   - category: Use
     dest: test_module_level_define.func1
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: .
   - category: Use
     dest: test_module_level_define.x
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: .
   - category: Use
     dest: test_module_level_define.y
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: .
   - category: Use
     dest: test_module_level_define.t1
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Use
     dest: test_module_level_define.t2
     src: test_module_level_define
+    r: 
+      u: .
+      e: .
+      d: x
   - category: Use
     dest: test_module_level_define.t3
     src: test_module_level_define
+    r: 
+      u: .
+      e: x
+      d: x
 
 ```
 
@@ -161,36 +245,80 @@ relation:
   - category: Use
     dest: test_local_use.func
     src: test_local_use.func.inner_inner
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func
-    src: test_local_use.func.inner
+    src: test_local_use.func.
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func.inner_inner
     src: test_local_use.func.inner
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func.inner
     src: test_local_use.func
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.a
     src: test_local_use.func2
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.b
     src: test_local_use.func2
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.x
     src: test_local_use.func2
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.y
     src: test_local_use.func2
+    r:
+      d: .
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.t1
     src: test_local_use.func2
+    r:
+      d: x
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.t2
     src: test_local_use.func2
+    r:
+      d: x
+      e: .
+      u: .
   - category: Use
     dest: test_local_use.func2.t3
     src: test_local_use.func2
+    r:
+      d: x
+      e: .
+      u: .
 
 ```
 
@@ -222,19 +350,37 @@ relation:
   - category: Define
     dest: test_use_class_attr.Base
     src: test_use_class_attr
+    r:
+      e: .
+      u: .
+      d: x
   - category: Inherit
     dest: test_use_class_attr.Base
     src: test_use_class_attr.Inherit
+    r:
+      e: .
+      u: .
+      d: .
   - category: Define
     dest: test_use_class_attr.Base
     src: test_use_class_attr
+    r:
+      e: .
+      u: .
+      d: x
   - category: Use
     dest: test_use_class_attr.Base.base_attribute
     src: test_use_class_attr.Inherit.use_attribute
+    r: 
+      e: .
+      u: .
+      d: x
   - category: Use
     dest: test_use_class_attr.Base.static_attr
     src: test_use_class_attr.Inherit.use_attribute
-  - category: Inherit
-    dest: test_use_class_attr.Base
-    src: test_use_class_attr.func.Inherit
+    r: 
+      e: .
+      u: .
+      d: .
+
 ```
