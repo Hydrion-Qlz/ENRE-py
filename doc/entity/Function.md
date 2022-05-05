@@ -1,12 +1,13 @@
 # Entity: Function
 A Function entity in python is a a wrapper around  executable code.
 
-## Supported Pattern
+## Supported pattern
+
 ```yaml
 name: FunctionDefinition
 ```
 
-### Syntax: FunctionDefinition
+## Syntax: FunctionDefinition
 ```
 funcdef                   : [decorators] "def" funcname "(" [parameter_list] ")"
                             ["->" expression] ":" suite
@@ -40,10 +41,11 @@ entity:
   - category: Function
     longname: test_global_function.func1
     name: func1
- 
-  - category: Parameter
-    longname: test_global_function.func1.x
-    name: x
+    r:
+        d: . 
+        e: .
+        s: .
+        u: .
 ```
 - Class Method Definition
 ```python
@@ -68,25 +70,51 @@ entity:
   - category: Class
     longname: test_method_definition.ClassA
     name: ClassA
+    r:
+        d: Type 
+        e: .
+        s: .
+        u: .
   - category: Function
     longname: test_method_definition.ClassA.method
     name: method
- 
+    r:
+        d: . 
+        e: .
+        s: .
+        u: .
   - category: Class
     longname: test_method_definition.ClassB
     name: ClassB
+    r:
+        d: Type 
+        e: .
+        s: .
+        u: .
   - category: Function
     longname: test_method_definition.ClassB.method
     name: method
- 
+    r:
+        d: . 
+        e: .
+        s: .
+        u: .
   - category: Class
     longname: test_method_definition.InheritClassA
     name: InheritClassA
- 
+    r:
+        d: Type 
+        e: .
+        s: .
+        u: .
   - category: Function
     longname: test_method_definition.InheritClassA.method
     name: method
- 
+    r:
+        d: . 
+        e: .
+        s: .
+        u: .
 ```
 
 - Nested Function Definition
@@ -112,13 +140,25 @@ entity:
   - category: Function
     longname: test_nested_function.func
     name: func
- 
+    r:
+        d: . 
+        e: .
+        s: .
+        u: .
   - category: Function
     longname: test_nested_function.func.inner
     name: inner
- 
+    r:
+        d: . 
+        e: .
+        s: .
+        u: .
   - category: Function
     longname: test_nested_function.func.inner.inner_inner
     name: inner_inner
- 
+    r:
+        d: .  
+        e: .
+        s: .
+        u: .
 ```
