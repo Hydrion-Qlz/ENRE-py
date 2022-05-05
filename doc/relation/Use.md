@@ -47,149 +47,170 @@ relation:
   exact: false
   items: 
   - category: Define
-    dest: test_module_level_define.Base
-    src: test_module_level_define
+    dest: test_module_level_use.Base
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.Inherit
-    src: test_module_level_define
+    dest: test_module_level_use.Inherit
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Inherit
-    dest: test_module_level_define.Base
-    src: test_module_level_define.Inherit
+    dest: test_module_level_use.Base
+    src: test_module_level_use.Inherit
     r: 
+      s: inheritance
       u: .
       e: .
       d: r/Extend
   - category: Define
-    dest: test_module_level_define.func1
-    src: test_module_level_define
+    dest: test_module_level_use.func1
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.x
-    src: test_module_level_define
+    dest: test_module_level_use.x
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.y
-    src: test_module_level_define
+    dest: test_module_level_use.y
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.t1
-    src: test_module_level_define
+    dest: test_module_level_use.t1
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.t2
-    src: test_module_level_define
+    dest: test_module_level_use.t2
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.t3
-    src: test_module_level_define
+    dest: test_module_level_use.t3
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: x
       d: x
   - category: Define
-    dest: test_module_level_define.a
-    src: test_module_level_define
+    dest: test_module_level_use.a
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Define
-    dest: test_module_level_define.b
-    src: test_module_level_define
+    dest: test_module_level_use.b
+    src: test_module_level_use
     r: 
+      s: o/Concept
       u: .
       e: .
       d: x
   - category: Use
-    dest: test_module_level_define.a
-    src: test_module_level_define
+    dest: test_module_level_use.a
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: .
       d: x
   - category: Use
-    dest: test_module_level_define.b
-    src: test_module_level_define
+    dest: test_module_level_use.b
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: .
       d: x
   - category: Use
-    dest: test_module_level_define.Base
-    src: test_module_level_define
+    dest: test_module_level_use.Base
+    src: test_module_level_use
     r: 
+      s: type use
       u: .
       e: .
       d: .
   - category: Use
-    dest: test_module_level_define.Inherit
-    src: test_module_level_define
+    dest: test_module_level_use.Inherit
+    src: test_module_level_use
     r: 
+      s: type use
       u: .
       e: .
       d: .
   - category: Use
-    dest: test_module_level_define.func1
-    src: test_module_level_define
+    dest: test_module_level_use.func1
+    src: test_module_level_use
     r: 
+      s: ambiguous use
       u: .
       e: .
       d: .
   - category: Use
-    dest: test_module_level_define.x
-    src: test_module_level_define
+    dest: test_module_level_use.x
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: .
       d: .
   - category: Use
-    dest: test_module_level_define.y
-    src: test_module_level_define
+    dest: test_module_level_use.y
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: .
       d: .
   - category: Use
-    dest: test_module_level_define.t1
-    src: test_module_level_define
+    dest: test_module_level_use.t1
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: .
       d: x
   - category: Use
-    dest: test_module_level_define.t2
-    src: test_module_level_define
+    dest: test_module_level_use.t2
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: .
       d: x
   - category: Use
-    dest: test_module_level_define.t3
-    src: test_module_level_define
+    dest: test_module_level_use.t3
+    src: test_module_level_use
     r: 
+      s: .
       u: .
       e: x
       d: x
@@ -246,6 +267,7 @@ relation:
     dest: test_local_use.func
     src: test_local_use.func.inner_inner
     r:
+      s: ambiguous use
       d: .
       e: .
       u: .
@@ -253,6 +275,7 @@ relation:
     dest: test_local_use.func
     src: test_local_use.func.
     r:
+      s: ambiguous use
       d: .
       e: .
       u: .
@@ -260,6 +283,7 @@ relation:
     dest: test_local_use.func.inner_inner
     src: test_local_use.func.inner
     r:
+      s: x
       d: .
       e: .
       u: .
@@ -267,6 +291,7 @@ relation:
     dest: test_local_use.func.inner
     src: test_local_use.func
     r:
+      s: ambiguous use
       d: .
       e: .
       u: .
@@ -274,6 +299,7 @@ relation:
     dest: test_local_use.func2.a
     src: test_local_use.func2
     r:
+      s: x
       d: .
       e: .
       u: .
@@ -281,6 +307,7 @@ relation:
     dest: test_local_use.func2.b
     src: test_local_use.func2
     r:
+      s: x
       d: .
       e: .
       u: .
@@ -288,6 +315,7 @@ relation:
     dest: test_local_use.func2.x
     src: test_local_use.func2
     r:
+      s: x
       d: .
       e: .
       u: .
@@ -295,6 +323,7 @@ relation:
     dest: test_local_use.func2.y
     src: test_local_use.func2
     r:
+      s: y
       d: .
       e: .
       u: .
@@ -309,6 +338,7 @@ relation:
     dest: test_local_use.func2.t2
     src: test_local_use.func2
     r:
+      s: x
       d: x
       e: .
       u: .
@@ -316,6 +346,7 @@ relation:
     dest: test_local_use.func2.t3
     src: test_local_use.func2
     r:
+      s: x
       d: x
       e: .
       u: .
@@ -351,6 +382,7 @@ relation:
     dest: test_use_class_attr.Base
     src: test_use_class_attr
     r:
+      s: o/Concept
       e: .
       u: .
       d: x
@@ -358,13 +390,15 @@ relation:
     dest: test_use_class_attr.Base
     src: test_use_class_attr.Inherit
     r:
+      s: inheritance
       e: .
       u: .
-      d: 2
+      d: r/Extend
   - category: Define
     dest: test_use_class_attr.Base
     src: test_use_class_attr
     r:
+      s: o/Concept
       e: .
       u: .
       d: x
@@ -372,6 +406,7 @@ relation:
     dest: test_use_class_attr.Base.base_attribute
     src: test_use_class_attr.Inherit.use_attribute
     r: 
+      s: .
       e: .
       u: .
       d: x
@@ -379,6 +414,7 @@ relation:
     dest: test_use_class_attr.Base.static_attr
     src: test_use_class_attr.Inherit.use_attribute
     r: 
+      s: .
       e: .
       u: .
       d: .
