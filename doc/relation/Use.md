@@ -1,5 +1,4 @@
 # Relation: Use
-# Relation: Define
 
 ## Supported Pattern
 ```yaml
@@ -123,15 +122,11 @@ def func():
     def inner():
 
         def inner_inner():
-            func()
             print(func)
 
-        func()
         print(func)
-        inner_inner()
         print(inner_inner)
 
-    inner()
     print(inner)
 
 def func2():
@@ -163,27 +158,15 @@ name: UseLocalDefinition
 relation:
   exact: false
   items:
-  - category: Call
+  - category: Use
     dest: test_local_use.func
     src: test_local_use.func.inner_inner
   - category: Use
     dest: test_local_use.func
-    src: test_local_use.func.inner_inner
-  - category: Call
-    dest: test_local_use.func
-    src: test_local_use.func.inner
-  - category: Use
-    dest: test_local_use.func
-    src: test_local_use.func.inner
-  - category: Call
-    dest: test_local_use.func.inner_inner
     src: test_local_use.func.inner
   - category: Use
     dest: test_local_use.func.inner_inner
     src: test_local_use.func.inner
-  - category: Call
-    dest: test_local_use.func.inner
-    src: test_local_use.func
   - category: Use
     dest: test_local_use.func.inner
     src: test_local_use.func
