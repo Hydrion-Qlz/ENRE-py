@@ -72,50 +72,24 @@ entity:
   - category: Class
     longname: test_method_definition.ClassA
     name: ClassA
-    r:
-          
- 
-        s:.
- 
   - category: Function
     longname: test_method_definition.ClassA.method
     name: method
-    r:
-          
- 
-        s:.
  
   - category: Class
     longname: test_method_definition.ClassB
     name: ClassB
-    r:
-          
- 
-        s:.
- 
   - category: Function
     longname: test_method_definition.ClassB.method
     name: method
-    r:
-          
- 
-        s:.
  
   - category: Class
     longname: test_method_definition.InheritClassA
     name: InheritClassA
-    r:
-          
- 
-        s:.
  
   - category: Function
     longname: test_method_definition.InheritClassA.method
     name: method
-    r:
-          
- 
-        s:.
  
 ```
 

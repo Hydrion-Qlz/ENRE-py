@@ -30,11 +30,6 @@ entity:
   - category: Class
     longname: test_global_class.Base
     name: Base
-    r:
-        d: 
-        e:
-        s:.
-        u:
 ```
 
 - Inherit Global Class Definition
@@ -57,19 +52,9 @@ entity:
   - category: Class
     longname: test_inherit_global_class.Base
     name: Base
-    r:
-        d: 
-        e:
-        s:.
-        u:
   - category: Class
     longname: test_inherit_global_class.Inherit
     name: Inherit
-    r:
-        d: 
-        e:
-        s:.
-        u:
 ```
 
 - Nested Class Definition 

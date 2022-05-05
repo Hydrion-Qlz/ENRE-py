@@ -35,7 +35,7 @@ t1, t2 = 1, 2
 
 ```yaml
 name: GlobalVariableDefinition
-entities:
+entity:
   exact: false
   items:
   - category: Variable
@@ -87,115 +87,56 @@ entity:
   items:
   - category: Function
     longname: test_local_variable.func
-    name: func
-    r:
-  
- 
-        s:.
- 
+    name: func 
   - category: Parameter
     longname: test_local_variable.func.p1
     name: p1
-    r:
-  
- 
-        s:x
  
   - category: Parameter
     longname: test_local_variable.func.p2
     name: p2
-    r:
-  
- 
-        s:x
  
   - category: Variable
     longname: test_local_variable.func.x
     name: x
-    r:
-  
- 
-        s:.
- 
   - category: Variable
     longname: test_local_variable.func.y
     name: y
-    r:
-  
- 
-        s:x
  
   - category: Variable
     longname: test_local_variable.func.t1
     name: t1
-    r:
-  
- 
-        s:x
  
   - category: Variable
     longname: test_local_variable.func.t2
     name: t2
-    r:
-  
- 
-        s:x
  
   - category: Variable
     longname: test_local_variable.func.t3
     name: t3
-    r:
-  
- 
-        s:x
  
   - category: Function
     longname: test_local_variable.func.inner
     name: inner
-    r:
-  
- 
-        s:.
  
   - category: Variable
     longname: test_local_variable.func.inner.x
     name: x
-    r:
-  
- 
-        s:.
  
   - category: Variable
     longname: test_local_variable.func.inner.y
     name: y
-    r:
-  
- 
-        s:.
  
   - category: Variable
     longname: test_local_variable.func.inner.t1
     name: t1
-    r:
-  
- 
-        s:.
- 
   - category: Variable
     longname: test_local_variable.func.inner.t2
     name: t2
-    r:
-  
- 
-        s:.
  
   - category: Variable
     longname: test_local_variable.func.inner.t3
     name: t3
-    r:
-  
- 
-        s:.
  
 ```
 
@@ -216,40 +157,20 @@ def func():
 
 ```yaml
 name: IterationVariable
-entities:
+entity:
   exact: false
   items:
   - category: Variable
     longname: test_iteration_variable.a
     name: a
-    r:
-  
- 
-        s:global variable
- 
   - category: Variable
     longname: test_iteration_variable.b
     name: b
-    r:
-  
- 
-        s:global variable
- 
   - category: Variable
     longname: test_iteration_variable.func.c
     name: c
-    r:
-  
- 
-        s:x
- 
   - category: Variable
     longname: test_iteration_variable.func.d
     name: d
-    r:
-  
- 
-        s:x
- 
 ```
 

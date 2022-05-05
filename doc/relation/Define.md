@@ -2,7 +2,7 @@
 
 ## Supported Pattern
 ```yaml
-Define
+name: Define
 ```
 ### Examples
 - Module Level Definition
@@ -30,6 +30,7 @@ t1, t2 = 1, 2
 ```
 
 ```yaml
+name: ModuleLevelDefine
 entity:
   exact: false
   items:
@@ -121,6 +122,7 @@ def func2():
 ```
 
 ```yaml
+name: LocalDefine
 entity:
   exact: false
   items:
