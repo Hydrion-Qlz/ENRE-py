@@ -31,7 +31,7 @@ def func():
 name: ClassInherit
 relation:
   exact: false
-  items:
+  items: 
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.Inherit
@@ -88,7 +88,7 @@ def mixin(c, d):
 name: VariableInherit
 relation:
   exact: false
-  items:
+  items: 
   - category: Inherit
     dest: test_variable_inherit.Mixed.c
     src: test_variable_inherit.mixin.Mixed

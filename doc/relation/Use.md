@@ -45,7 +45,7 @@ print(t3)
 name: UseModuleLevelDefinition
 relation:
   exact: false
-  items:
+  items: 
   - category: Define
     dest: test_module_level_define.Base
     src: test_module_level_define
@@ -241,7 +241,7 @@ def func2():
 name: UseLocalDefinition
 relation:
   exact: false
-  items:
+  items: 
   - category: Use
     dest: test_local_use.func
     src: test_local_use.func.inner_inner
@@ -346,7 +346,7 @@ class Inherit(Base):
 name: UseClassAttribute
 relation:
   exact: false
-  items:
+  items: 
   - category: Define
     dest: test_use_class_attr.Base
     src: test_use_class_attr

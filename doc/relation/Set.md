@@ -28,12 +28,12 @@ t1, t2 = 3, 4
 name: Set Global Variable
 relation:
   exact: false
-  items:
+  items: 
   - category: Set
     dest: test_set_variable.x
     src: test_set_variable
     r: 
-      s: x
+      s:  x
       e: .
       d: r/Use
       u: .
@@ -41,7 +41,7 @@ relation:
     dest: test_set_variable.y
     src: test_set_variable
     r: 
-      s: x
+      s:  x
       e: .
       d: r/Use
       u: .
@@ -49,7 +49,7 @@ relation:
     dest: test_set_variable.t1
     src: test_set_variable
     r: 
-      s: x
+      s:  x
       e: .
       d: r/Use
       u: .
@@ -57,7 +57,7 @@ relation:
     dest: test_set_variable.t2
     src: test_set_variable
     r: 
-      s: x
+      s:  x
       e: .
       d: r/Use
       u: .
@@ -65,7 +65,7 @@ relation:
     dest: test_set_variable.t3
     src: test_set_variable
     r: 
-      s: x
+      s:  x
       e: x
       d: x
       u: .

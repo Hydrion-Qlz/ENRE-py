@@ -33,7 +33,7 @@ t1, t2 = 1, 2
 name: ModuleLevelDefine
 relation:
   exact: false
-  items:
+  items: 
   - category: Define
     dest: test_module_level_define.Base
     src: test_module_level_define
@@ -125,7 +125,7 @@ def func2():
 name: LocalDefinition
 relation:
   exact: false
-  items:
+  items: 
   - category: Define
     dest: test_nested_define.func
     src: test_nested_define
