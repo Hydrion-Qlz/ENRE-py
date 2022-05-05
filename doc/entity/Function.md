@@ -1,7 +1,12 @@
 # Entity: Function
 A Function entity in python is a a wrapper around  executable code.
 
-## Syntax: FunctionDefinition
+## Supported Pattern
+```yaml
+name: FunctionDefinition
+```
+
+### Syntax: FunctionDefinition
 ```
 funcdef                   : [decorators] "def" funcname "(" [parameter_list] ")"
                             ["->" expression] ":" suite
@@ -35,19 +40,10 @@ entity:
   - category: Function
     longname: test_global_function.func1
     name: func1
-    r:
-          
- 
-        s:.
  
   - category: Parameter
     longname: test_global_function.func1.x
     name: x
-    r:
-          
- 
-        s:.
- 
 ```
 - Class Method Definition
 ```python
@@ -125,5 +121,4 @@ entity:
     longname: test_nested_function.func.inner.inner_inner
     name: inner_inner
  
-name: TBA
 ```

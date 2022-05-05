@@ -1,7 +1,12 @@
 # Entity: Module
 An object that serves as an organizational unit of Python code. Modules have a namespace containing arbitrary Python objects. Definition within a module can be imported by import statement.
 
-## Syntax: Module
+## Supported Pattern
+```yaml
+name: ModuleDefinition
+```
+
+### Syntax: Module
 ```
 ```
 
@@ -11,7 +16,8 @@ An object that serves as an organizational unit of Python code. Modules have a n
 ```python
 // test_module_a.py
 import test_module_b as b
-
+```
+```python
 // test_module_b.py
 import test_module_a as a
 ```
