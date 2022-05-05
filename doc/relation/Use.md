@@ -66,7 +66,7 @@ relation:
     r: 
       u: .
       e: .
-      d: x
+      d: r/Extend
   - category: Define
     dest: test_module_level_define.func1
     src: test_module_level_define
@@ -360,7 +360,7 @@ relation:
     r:
       e: .
       u: .
-      d: .
+      d: 2
   - category: Define
     dest: test_use_class_attr.Base
     src: test_use_class_attr

@@ -38,42 +38,42 @@ relation:
     r:
       e: .
       u: .
-      d: .
+      d: r/Extend
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.Inherit1
     r:
       e: .
       u: .
-      d: .
+      d: r/Extend
   - category: Inherit
     dest: test_inherit.Base2
     src: test_inherit.Inherit1
     r:
       e: .
       u: .
-      d: .
+      d: r/Extend
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.func.LocalInherit
     r:
       e: .
       u: .
-      d: .
+      d: r/Extend
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.func.LocalInherit2
     r:
       e: .
       u: .
-      d: .
+      d: r/Extend
   - category: Inherit
     dest: test_inherit.Base2
     src: test_inherit.func.LocalInherit2
     r:
       e: .
       u: .
-      d: .
+      d: r/Extend
 
 ```
 - VariableInherit
