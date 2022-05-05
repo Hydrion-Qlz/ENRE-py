@@ -79,7 +79,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      depends:  x
+      d:  x
   - category: Define
     dest: test_method_call.ClassA.method
     src: test_method_call.ClassA
@@ -87,7 +87,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      depends:  x
+      d:  x
   - category: Define
     dest: test_method_call.ClassB
     src: test_method_call
@@ -95,7 +95,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      depends:  x
+      d:  x
   - category: Define
     dest: test_method_call.ClassB.method
     src: test_method_call.ClassB
@@ -103,7 +103,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      depends:  x
+      d:  x
 
   - category: Define
     dest: test_method_call.instance
@@ -112,7 +112,7 @@ relation:
       s:  .
       e: .
       u: .
-      depends:  x
+      d:  x
 
   - category: Call
     dest: test_method_call.ClassA.method
@@ -121,7 +121,7 @@ relation:
       s:  .
       e: .
       u: .
-      depends:  .
+      d:  .
   - category: Call
     dest: test_method_call.ClassB.method
     negative: True
@@ -130,7 +130,7 @@ relation:
       s:  .
       e: .
       u: x
-      depends:  .
+      d:  .
 
 
 ```

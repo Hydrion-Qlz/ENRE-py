@@ -36,6 +36,7 @@ relation:
     dest: test_inherit.Base
     src: test_inherit.Inherit
     r:
+      s: inheritance
       e: .
       u: .
       d: r/Extend
@@ -43,6 +44,7 @@ relation:
     dest: test_inherit.Base
     src: test_inherit.Inherit1
     r:
+      s: inheritance
       e: .
       u: .
       d: r/Extend
@@ -50,6 +52,7 @@ relation:
     dest: test_inherit.Base2
     src: test_inherit.Inherit1
     r:
+      s: inheritance
       e: .
       u: .
       d: r/Extend
@@ -57,6 +60,7 @@ relation:
     dest: test_inherit.Base
     src: test_inherit.func.LocalInherit
     r:
+      s: inheritance
       e: .
       u: .
       d: r/Extend
@@ -64,6 +68,7 @@ relation:
     dest: test_inherit.Base
     src: test_inherit.func.LocalInherit2
     r:
+      s: inheritance
       e: .
       u: .
       d: r/Extend
@@ -71,6 +76,7 @@ relation:
     dest: test_inherit.Base2
     src: test_inherit.func.LocalInherit2
     r:
+      s: inheritance
       e: .
       u: .
       d: r/Extend
@@ -93,6 +99,7 @@ relation:
     dest: test_variable_inherit.Mixed.c
     src: test_variable_inherit.mixin.Mixed
     r:
+      s: x
       e: .
       u: x
       d: x
@@ -101,6 +108,7 @@ relation:
     dest: test_variable_inherit.Mixed.d
     src: test_variable_inherit.mixin.Mixed
     r:
+      s: x
       e: .
       u: x
       d: x

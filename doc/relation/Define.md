@@ -38,6 +38,7 @@ relation:
     dest: test_module_level_define.Base
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -46,6 +47,7 @@ relation:
     dest: test_module_level_define.Inherit
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -53,6 +55,7 @@ relation:
     dest: test_module_level_define.func1
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -60,6 +63,7 @@ relation:
     dest: test_module_level_define.x
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -67,6 +71,7 @@ relation:
     dest: test_module_level_define.y
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -74,6 +79,7 @@ relation:
     dest: test_module_level_define.t1
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -81,6 +87,7 @@ relation:
     dest: test_module_level_define.t2
     src: test_module_level_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -88,6 +95,7 @@ relation:
     dest: test_module_level_define.t3
     src: test_module_level_define
     r:
+      s: o/Concept
       e: x
       d: x
       u: .
@@ -130,6 +138,7 @@ relation:
     dest: test_nested_define.func
     src: test_nested_define
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -137,6 +146,7 @@ relation:
     dest: test_nested_define.func.inner
     src: test_nested_define.func
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -144,6 +154,7 @@ relation:
     dest: test_nested_define.func.inner_inner
     src: test_nested_define.func
     r:
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -151,6 +162,7 @@ relation:
     dest: test_nested_define.func2.x
     src: test_nested_define.func2
     r:
+      s: x
       e: .
       d: x
       u: .
@@ -158,6 +170,7 @@ relation:
     dest: test_nested_define.func2.y
     src: test_nested_define.func2
     r:
+      s: x
       e: .
       d: x
       u: .
@@ -165,6 +178,7 @@ relation:
     dest: test_nested_define.func2.t1
     src: test_nested_define.func2
     r:
+      s: x
       e: .
       d: x
       u: .
@@ -172,6 +186,7 @@ relation:
     dest: test_nested_define.func2.t2
     src: test_nested_define.func2
     r:
+      s: x
       e: .
       d: x
       u: .
@@ -179,6 +194,7 @@ relation:
     dest: test_nested_define.func2.t3
     src: test_nested_define.func2
     r:
+      s: x
       e: x
       d: x
       u: .
