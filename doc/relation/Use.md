@@ -194,3 +194,47 @@ relation:
 
 ```
 
+- Use Class Attribute
+```python
+// test_use_class_attr.py
+class Base:
+    static_attr = 1
+    def __init__(self):
+        self.base_attribute = 1
+
+class Inherit(Base):
+    def __init__(self):
+
+        super().__init__()
+
+    def use_attribute(self):
+        print(self.base_attribute)
+
+        print(self.static_attr)
+
+```
+
+```yaml
+name: UseClassAttribute
+relation:
+  exact: false
+  items:
+  - category: Define
+    dest: test_use_class_attr.Base
+    src: test_use_class_attr
+  - category: Inherit
+    dest: test_use_class_attr.Base
+    src: test_use_class_attr.Inherit
+  - category: Define
+    dest: test_use_class_attr.Base
+    src: test_use_class_attr
+  - category: Use
+    dest: test_use_class_attr.Base.base_attribute
+    src: test_use_class_attr.Inherit.use_attribute
+  - category: Use
+    dest: test_use_class_attr.Base.static_attr
+    src: test_use_class_attr.Inherit.use_attribute
+  - category: Inherit
+    dest: test_use_class_attr.Base
+    src: test_use_class_attr.func.Inherit
+```
