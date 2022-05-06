@@ -69,7 +69,7 @@ relation:
       s: inheritance
       u: .
       e: .
-      d: r/Extend
+      d: Extend
   - category: Define
     dest: test_module_level_use.func1
     src: test_module_level_use
@@ -393,7 +393,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
   - category: Define
     dest: test_use_class_attr.Base
     src: test_use_class_attr
