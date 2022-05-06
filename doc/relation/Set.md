@@ -35,7 +35,7 @@ relation:
     r: 
       s: x
       e: .
-      d: Use
+      d: xUse
       u: .
   - category: Set
     dest: test_set_variable.y
@@ -43,7 +43,7 @@ relation:
     r: 
       s: x
       e: .
-      d: Use
+      d: xUse
       u: .
   - category: Set
     dest: test_set_variable.t1
@@ -51,7 +51,7 @@ relation:
     r: 
       s: x
       e: .
-      d: Use
+      d: xUse
       u: .
   - category: Set
     dest: test_set_variable.t2
@@ -59,7 +59,7 @@ relation:
     r: 
       s: x
       e: .
-      d: Use
+      d: xUse
       u: .
   - category: Set
     dest: test_set_variable.t3
