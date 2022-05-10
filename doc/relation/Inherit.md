@@ -39,7 +39,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.Inherit1
@@ -47,7 +47,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
   - category: Inherit
     dest: test_inherit.Base2
     src: test_inherit.Inherit1
@@ -55,7 +55,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.func.LocalInherit
@@ -63,7 +63,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
   - category: Inherit
     dest: test_inherit.Base
     src: test_inherit.func.LocalInherit2
@@ -71,7 +71,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
   - category: Inherit
     dest: test_inherit.Base2
     src: test_inherit.func.LocalInherit2
@@ -79,7 +79,7 @@ relation:
       s: inheritance
       e: .
       u: .
-      d: r/Extend
+      d: Extend
 
 ```
 - VariableInherit

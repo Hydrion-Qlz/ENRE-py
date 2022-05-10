@@ -42,7 +42,7 @@ relation:
     dest: test_global_function_call.func1
     src: test_global_function_call
     r:
-      s:  .
+      s: .
       e: .
       d: .
       u: .
@@ -79,7 +79,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      d:  x
+      d: x
   - category: Define
     dest: test_method_call.ClassA.method
     src: test_method_call.ClassA
@@ -87,7 +87,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      d:  x
+      d: x
   - category: Define
     dest: test_method_call.ClassB
     src: test_method_call
@@ -95,7 +95,7 @@ relation:
       s: o/Concept
       e: .
       u: .
-      d:  x
+      d: x
   - category: Define
     dest: test_method_call.ClassB.method
     src: test_method_call.ClassB
@@ -103,34 +103,34 @@ relation:
       s: o/Concept
       e: .
       u: .
-      d:  x
+      d: x
 
   - category: Define
     dest: test_method_call.instance
     src: test_method_call
     r: 
-      s:  .
+      s: .
       e: .
       u: .
-      d:  x
+      d: x
 
   - category: Call
     dest: test_method_call.ClassA.method
     src: test_method_call
     r: 
-      s:  .
+      s: .
       e: .
       u: .
-      d:  .
+      d: .
   - category: Call
     dest: test_method_call.ClassB.method
     negative: True
     src: test_method_call
     r: 
-      s:  .
+      s: .
       e: .
       u: x
-      d:  .
+      d: .
 
 
 ```
@@ -159,7 +159,7 @@ relation:
     dest: test_local_call.func
     src: test_local_call
     r: 
-      s:  o/Concept
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -167,7 +167,7 @@ relation:
     dest: test_local_call.func.inner
     src: test_local_call.func
     r: 
-      s:  o/Concept
+      s: o/Concept
       e: .
       d: x
       u: .
@@ -183,7 +183,7 @@ relation:
     dest: test_local_call.func
     src: test_local_call.func.inner.inner_inner
     r:
-      s:  .
+      s: .
       e: .
       d: .
       u: .
@@ -199,7 +199,7 @@ relation:
     dest: test_local_call.func.inner.inner_inner
     src: test_local_call.func.inner
     r:
-      s:  .
+      s: .
       e: .
       d: .
       u: .
@@ -207,7 +207,7 @@ relation:
     dest: test_local_call.func.inner
     src: test_local_call.func
     r:
-      s:  .
+      s: .
       e: .
       d: .
       u: .
@@ -229,7 +229,7 @@ relation:
     - dest: test_first_order_func_call.f
       src: test_first_order_func_call.acceptor
       r:
-        s:  x
+        s: x
         e: .
         u: .
         d: x
